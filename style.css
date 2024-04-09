@@ -48,16 +48,16 @@ a {
 }
 
 .container {
-  padding-inline: 1.125rem;
+  padding-inline: 1.85rem;
 }
 
 .btn {
   display: inline-block;
   text-transform: uppercase;
   border: 2px solid white;
-  padding: 0.6em 1.5em;
+  padding: 0.65em 1.75em;
   color: white;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 0.95rem;
 }
 
@@ -69,10 +69,9 @@ header .message {
   position: relative;
   background-color: var(--dark-violet);
   color: white;
-  padding-block: 6.5rem;
+  padding-block: 6.25rem;
   z-index: 1;
 }
-
 header .message::before {
   content: '';
   position: absolute;
@@ -85,8 +84,8 @@ header .message::after {
   content: '';
   position: absolute;
   inset: 0%;
-  left: calc(100% - 125px);
-  top: calc(100% - 155px);
+  left: calc(100% - 123px);
+  top: calc(100% - 153px);
   bottom: -520px;
   background: url(./images/bg-pattern-intro-right-mobile.svg);
   background-repeat: no-repeat;
@@ -94,18 +93,23 @@ header .message::after {
 }
 
 .message h1 {
-  font-size: 2.8rem;
-  line-height: 1.125;
+  margin-top: -5px;
+  font-size: 2.95rem;
+  line-height: 1;
   font-weight: 400;
 }
 
 .message p {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
   line-height: 1.6;
+  color: var(--very-light-Gray);
+  opacity: 0.75;
 }
 
 .message a {
-  margin-top: 2rem;
+  margin-top: 2.25rem;
 }
 
 /* We're Different */
