@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
 :root {
   --mobile-size: 375px;
   --desktop-size: 1440px;
@@ -8,15 +11,144 @@
   --very-light-Gray: hsl(0, 0%, 98%);
 }
 
-* {
-  padding: 0;
+*,
+*::before,
+*::after,
+html,
+body,
+h1,
+h2,
+h3 {
   margin: 0;
   box-sizing: border-box;
 }
 img {
   max-width: 100%;
+  display: block;
 }
 
 body {
   font-size: 16px;
+  font-family: Karla;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.heading {
+  font-family: 'DM Serif Display';
+}
+
+.container {
+  padding-inline: 1.125rem;
+}
+
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  border: 2px solid white;
+  padding: 0.6em 1.5em;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 0.95rem;
+}
+
+header img {
+  width: 100%;
+}
+
+header .message {
+  position: relative;
+  background-color: var(--dark-violet);
+  color: white;
+  padding-block: 6.5rem;
+  z-index: 1;
+}
+
+header .message::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url(./images/bg-pattern-intro-left-mobile.svg);
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+header .message::after {
+  content: '';
+  position: absolute;
+  inset: 0%;
+  left: calc(100% - 125px);
+  top: calc(100% - 155px);
+  bottom: -520px;
+  background: url(./images/bg-pattern-intro-right-mobile.svg);
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+
+.message h1 {
+  font-size: 2.8rem;
+  line-height: 1.125;
+  font-weight: 400;
+}
+
+.message p {
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}
+
+.message a {
+  margin-top: 2rem;
+}
+
+/* We're Different */
+.features {
+  position: relative;
+  margin-top: 9rem;
+  padding-block: 2rem;
+}
+.features::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  inset: 0;
+  background-color: var(--dark-grayish-violet);
+  left: calc(50% - 25%);
+}
+
+.features h2.heading {
+  font-size: 2.75rem;
+  font-weight: 500;
+  color: var(--very-dark-violet);
+}
+
+.features__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 4rem;
+}
+
+.features__item img {
+  margin: 0 auto;
+}
+.features__item h3 {
+  margin-top: 2rem;
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: var(--very-dark-violet);
+}
+
+.features__item p {
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  color: var(--dark-grayish-violet);
+  font-weight: 600;
 }
