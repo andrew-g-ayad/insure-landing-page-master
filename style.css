@@ -48,7 +48,7 @@ a {
 }
 
 .container {
-  padding-inline: 1.85rem;
+  padding-inline: 1.82rem;
 }
 
 .btn {
@@ -124,7 +124,8 @@ header .message::after {
   width: 50%;
   height: 1px;
   inset: 0;
-  background-color: var(--dark-grayish-violet);
+  background-color: var(--dark-violet);
+  opacity: 0.4;
   left: calc(50% - 25%);
 }
 
@@ -135,7 +136,7 @@ header .message::after {
 }
 
 .features__grid {
-  margin-top: 4rem;
+  margin-top: 4.5rem;
   display: grid;
   gap: 4rem;
 }
@@ -145,24 +146,25 @@ header .message::after {
 }
 .features__item h3 {
   margin-top: 2rem;
-  font-size: 1.75rem;
-  font-weight: 400;
+  font-size: 1.65rem;
+  font-weight: 500;
   color: var(--very-dark-violet);
 }
 
 .features__item p {
   margin-top: 1rem;
+  font-weight: 600;
   line-height: 1.5rem;
   color: var(--dark-grayish-violet);
-  font-weight: 600;
+  opacity: 0.75;
 }
 
 .cta {
   position: relative;
-  margin-top: 6rem;
+  margin-top: 7rem;
   background-color: var(--dark-violet);
   color: white;
-  padding-block: 4rem;
+  padding-block: 4.5rem;
   z-index: 1;
 }
 
@@ -184,4 +186,67 @@ header .message::after {
 
 .cta a {
   margin-top: 3rem;
+}
+
+.footer {
+  position: relative;
+  margin-top: 9rem;
+  padding-block: 5.5rem;
+  background-color: var(--very-light-Gray);
+  z-index: 1;
+}
+
+footer::before {
+  position: absolute;
+  content: '';
+  inset: 0;
+  background-image: url(./images/bg-pattern-footer-mobile.svg);
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.social img {
+  margin-inline: auto;
+}
+
+.social__links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: auto;
+  margin-top: 2rem;
+  width: 150px;
+}
+
+.divider {
+  margin-block: 2.5rem;
+  height: 1px;
+  width: 100%;
+  background-color: var(--dark-grayish-violet);
+  opacity: 0.25;
+}
+
+.footer nav {
+  text-transform: uppercase;
+}
+
+.footer nav h3 {
+  font-size: 0.9rem;
+  color: var(--dark-grayish-violet);
+}
+
+.footer nav h3 {
+  margin-top: 2rem;
+}
+.footer nav ul {
+  margin-top: 2rem;
+}
+.footer nav li {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 1;
+  color: var(--very-dark-violet);
+  opacity: 0.85;
 }
