@@ -247,6 +247,8 @@ footer::before {
   font-size: 0.9rem;
   font-weight: 800;
   letter-spacing: 1;
-  color: var(--very-dark-violet);
   opacity: 0.85;
+}
+.footer nav li a {
+  color: var(--very-dark-violet);
 }
