@@ -393,4 +393,10 @@ footer::before {
   .footer nav li {
     margin-inline: 0;
   }
+  .footer .social_link:hover {
+    filter: brightness(60%);
+  }
+  .footer li:hover a {
+    text-decoration: underline;
+  }
 }
