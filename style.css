@@ -266,6 +266,11 @@ footer::before {
   body {
     text-align: left;
   }
+  .container {
+    padding-inline: 0;
+    width: 78%;
+    margin-inline: auto;
+  }
   header {
     position: relative;
     padding-top: 6rem;
@@ -316,5 +321,24 @@ footer::before {
   .header_container img {
     width: 50%;
     order: 2;
+  }
+  .features {
+    margin-top: 15rem;
+  }
+  .features::before {
+    left: 0;
+    width: 10ch;
+  }
+  .features h2.heading {
+    font-size: 4rem;
+  }
+
+  .features__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+  .features__item img {
+    margin-left: 0;
+    width: 5rem;
   }
 }
