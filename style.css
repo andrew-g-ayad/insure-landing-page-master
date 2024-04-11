@@ -369,4 +369,28 @@ footer::before {
   .cta a {
     margin-top: 0;
   }
+
+  .footer .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer .social img {
+    margin: 0;
+  }
+  .footer .social__links {
+    margin: 0;
+  }
+  .footer nav {
+    display: flex;
+    justify-content: start;
+    gap: 12rem;
+  }
+  .footer nav > ul {
+    width: 1fr;
+  }
+  .footer nav li {
+    margin-inline: 0;
+  }
 }
