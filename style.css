@@ -352,4 +352,21 @@ footer::before {
     margin-left: 0;
     width: 5rem;
   }
+  .cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5rem;
+  }
+  .cta::before {
+    background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+    left: calc(100% - 430px);
+  }
+
+  .cta .heading {
+    max-width: 17.5ch;
+  }
+  .cta a {
+    margin-top: 0;
+  }
 }
