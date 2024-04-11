@@ -61,13 +61,20 @@ a {
   font-size: 0.95rem;
 }
 
+.btn:hover {
+  color: var(--dark-violet);
+  background-color: white;
+  cursor: pointer;
+}
+
 header img {
   width: 100%;
 }
-
+header {
+  background-color: var(--dark-violet);
+}
 header .message {
   position: relative;
-  background-color: var(--dark-violet);
   color: white;
   padding-block: 6.25rem;
   z-index: 1;
@@ -100,6 +107,7 @@ header .message::after {
 }
 
 .message p {
+  padding: 1.82rem;
   margin-top: 1rem;
   font-weight: 400;
   font-size: 1rem;
@@ -251,4 +259,62 @@ footer::before {
 }
 .footer nav li a {
   color: var(--very-dark-violet);
+}
+
+/* Desktop Layout */
+@media (min-width: 50em) {
+  body {
+    text-align: left;
+  }
+  header {
+    position: relative;
+    padding-top: 6rem;
+    height: 38rem;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    top: 72.5%;
+    bottom: -350px;
+    background-image: url(./images/bg-pattern-intro-left-desktop.svg);
+    background-repeat: no-repeat;
+  }
+  header .message {
+    padding: 0;
+  }
+  .header_container .flex {
+    display: flex;
+    gap: 1.5rem;
+    margin-inline: auto;
+    width: 78%;
+    max-width: 1300px;
+  }
+  .message {
+    width: 50%;
+  }
+  header .message::before,
+  header .message::after {
+    background: none;
+  }
+  .header_container h1 {
+    position: relative;
+    padding-top: 3rem;
+    font-size: 4.5rem;
+  }
+  .header_container h1::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 4.3ch;
+    height: 1px;
+    background-color: var(--very-light-Gray);
+  }
+  .message p {
+    padding: 0;
+  }
+  .header_container img {
+    width: 50%;
+    order: 2;
+  }
 }
