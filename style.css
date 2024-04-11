@@ -285,6 +285,17 @@ footer::before {
     background-image: url(./images/bg-pattern-intro-left-desktop.svg);
     background-repeat: no-repeat;
   }
+  header::after {
+    content: '';
+    position: absolute;
+    background-image: url(./images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    top: -88px;
+    left: calc(100% - 435px);
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+  }
   header .message {
     padding: 0;
   }
