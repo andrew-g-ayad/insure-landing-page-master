@@ -76,7 +76,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 2rem;
+  padding-block: 1rem;
 }
 
 .nav__ul {
@@ -88,12 +88,11 @@ a {
 .btn-nav {
   color: var(--dark-grayish-violet);
   opacity: 0.75;
-  font-weight: 800;
+  font-weight: 700;
 }
 .btn-nav.active {
   color: var(--very-dark-violet);
   opacity: 1;
-  font-weight: 800;
 }
 .btn-nav:hover {
   opacity: 1;
