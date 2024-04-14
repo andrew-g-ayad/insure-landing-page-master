@@ -269,6 +269,8 @@ footer::before {
   .container {
     padding-inline: 0;
     width: 78%;
+    max-width: 1300px;
+
     margin-inline: auto;
   }
   header {
