@@ -12,6 +12,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="./main.js" defer></script>
     <title>Frontend Mentor | Insure landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -26,18 +27,19 @@
       }
     </style>
   </head>
-  <body>
+  <body id="body">
     <div class="nav-container">
       <div class="container">
         <nav class="nav">
           <img src="./images/logo.svg" alt="insure's logo" class="logo" />
-          <ul class="nav__ul">
+          <ul id="menu" class="nav__ul">
             <li><a class="btn btn-nav active" href="#">HOW WE WORK</a></li>
             <li><a class="btn btn-nav" href="#">BLOG</a></li>
             <li><a class="btn btn-nav" href="#">ACCOUNT</a></li>
             <li><a class="btn btn-nav-view-plans" href="#">VIEW PLANS</a></li>
           </ul>
         </nav>
+        <button id="btn-toggle"></button>
       </div>
     </div>
     <header>
