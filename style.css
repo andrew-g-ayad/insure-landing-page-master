@@ -387,10 +387,10 @@ footer::before {
   .footer nav {
     display: flex;
     justify-content: start;
-    gap: 12rem;
+    /* gap: 12rem; */
   }
   .footer nav > ul {
-    width: 1fr;
+    width: 25%;
   }
   .footer nav li {
     margin-inline: 0;
