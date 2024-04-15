@@ -299,7 +299,8 @@ header .message::after {
 .footer {
   position: relative;
   margin-top: 9rem;
-  padding-block: 5.5rem;
+  padding-top: 5.5rem;
+  padding-bottom: 2rem;
   background-color: var(--very-light-Gray);
   z-index: 1;
 }
@@ -487,7 +488,6 @@ footer::before {
   .footer nav {
     display: flex;
     justify-content: start;
-    /* gap: 12rem; */
   }
   .footer nav > ul {
     width: 25%;
