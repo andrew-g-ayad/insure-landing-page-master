@@ -76,7 +76,7 @@ a {
   background-color: white;
 }
 
-.nav {
+.top-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
