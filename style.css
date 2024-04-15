@@ -108,6 +108,10 @@ a {
   color: white;
   background-color: var(--dark-violet);
 }
+#btn-toggle {
+  position: absolute;
+  visibility: hidden;
+}
 /* Navbar mobile */
 @media (max-width: 470px) {
   .nav__ul {
@@ -147,6 +151,8 @@ a {
   }
   #btn-toggle {
     display: block;
+    position: relative;
+    visibility: visible;
     margin-top: 0;
     width: 2rem;
     height: 2rem;
@@ -156,6 +162,7 @@ a {
     background-repeat: no-repeat;
   }
 }
+
 #btn-toggle.btn-open {
   background-image: url(./images/icon-close.svg);
 }
